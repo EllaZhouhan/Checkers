@@ -39,7 +39,6 @@ batch_size = 64
 n_positions = 36
 
 appro = CNN(n_positions)
-appro.load_
 
 def logistic(samples, targets):
     clf = LogisticRegression()

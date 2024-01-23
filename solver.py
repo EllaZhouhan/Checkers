@@ -12,6 +12,12 @@ import numpy as np
 class solver:
 
     def __init__(self, step_size, epsilon, env):
+        '''
+        Classical Q-learning, update Q-table
+        :param step_size:
+        :param epsilon:
+        :param env:
+        '''
 
         self.step_size = step_size
         self.epsilon = epsilon
@@ -32,7 +38,7 @@ class solver:
 
     def __init__(self, capacity, q_func, env, player):
         """
-
+        Q-function approximation, update Q-function, for example, DQN algorithm
         :param capacity: initialize replay memory to capacity
         :param q_func: initialize q_function, with input [state, action]
         """
